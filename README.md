@@ -1,5 +1,5 @@
 # eggjs
-eggjs + egg-jwt + egg-sequelize
+eggjs + egg-jwt + egg-sequelize + typescript
 
 ## QuickStart
 
