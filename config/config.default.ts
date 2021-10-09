@@ -1,5 +1,5 @@
 import { EggAppConfig, EggAppInfo, PowerPartial } from 'egg';
-
+import aliNodeConfig from './alinode.config';
 export default (appInfo: EggAppInfo) => {
   const config = {} as PowerPartial<EggAppConfig>;
 
@@ -43,11 +43,15 @@ export default (appInfo: EggAppInfo) => {
       enable: false,
       ignoreJSON: true,
     },
-    domainWhiteList: [ 'http://localhost:10086' ],
+    domainWhiteList: ['http://localhost:3009'],
   };
   config.cors = {
     // origin: '*',
     allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
+  };
+
+  config.alinode = {
+    ...aliNodeConfig,
   };
 
 

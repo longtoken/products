@@ -8,6 +8,7 @@
     "declarations": true
   },
   "scripts": {
+    "alinode": "egg-scripts start --daemon",
     "start": "egg-scripts start --daemon --title=egg-server-fororm",
     "stop": "egg-scripts stop --title=egg-server-fororm",
     "dev": "egg-bin dev",
@@ -25,6 +26,7 @@
     "@types/bcryptjs": "^2.4.2",
     "bcryptjs": "^2.4.3",
     "egg": "^2.6.1",
+    "egg-alinode": "^2.0.1",
     "egg-cors": "^2.2.3",
     "egg-jwt": "^3.1.7",
     "egg-scripts": "^2.6.0",
